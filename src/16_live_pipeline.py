@@ -14,18 +14,19 @@ sd = sd.groupby(['station', 'date'], as_index=False).agg({'station_name': 'first
 VARS = ['temperature_2m_mean', 'temperature_2m_max', 'temperature_2m_min', 'precipitation_sum', 'wind_speed_10m_max', 'wind_direction_10m_dominant', 'pressure_msl_mean', 'cloud_cover_mean',
         'relative_humidity_2m_mean', 'dew_point_2m_mean', 'shortwave_radiation_sum', 'et0_fao_evapotranspiration']
 cities = list(cityxy.index); rows = []
-for i in range(0, len(cities), 40):
-    ch = cities[i:i + 40]
-    for t in range(6):
-        r = requests.get('https://api.open-meteo.com/v1/forecast', params={'latitude': ','.join(f'{cityxy.lat[c]:.3f}' for c in ch), 'longitude': ','.join(f'{cityxy.lon[c]:.3f}' for c in ch),
-                         'daily': ','.join(VARS), 'past_days': 92, 'forecast_days': 6, 'timezone': 'Asia/Kolkata'}, timeout=120)
-        if r.status_code == 200: break
+for i in range(0, len(cities), 20):
+    ch = cities[i:i + 20]
+    for t in range(8):
+        try: r = requests.get('https://api.open-meteo.com/v1/forecast', params={'latitude': ','.join(f'{cityxy.lat[c]:.3f}' for c in ch), 'longitude': ','.join(f'{cityxy.lon[c]:.3f}' for c in ch),
+                         'daily': ','.join(VARS), 'past_days': 92, 'forecast_days': 6, 'timezone': 'Asia/Kolkata'}, timeout=90)
+        except requests.RequestException as e: r = None; print('weather request failed, retrying:', type(e).__name__, flush=True)   # a timeout must be retried too
+        if r is not None and r.status_code == 200: break
         time.sleep(15 * (t + 1))
-    else: raise SystemExit('weather fetch failed: ' + r.text[:200])
+    else: raise SystemExit('weather fetch failed after 8 tries')
     js = r.json(); js = js if isinstance(js, list) else [js]
     for c, j in zip(ch, js):
         w = pd.DataFrame(j['daily']).rename(columns={'time': 'date'}); w['city'] = c; rows.append(w)
-    print('weather', min(i + 40, len(cities)), '/', len(cities), flush=True)
+    print('weather', min(i + 20, len(cities)), '/', len(cities), flush=True)
 wx = pd.concat(rows); wx['date'] = pd.to_datetime(wx.date); wx.to_parquet('data/processed/weather_live.parquet')
 if os.path.exists('data/external/weather_recent_archive.parquet'):    # the archive is authoritative for the past; the forecast API only for days the archive does not have yet
     arc = pd.read_parquet('data/external/weather_recent_archive.parquet').dropna(subset=['precipitation_sum', 'wind_speed_10m_max'])
