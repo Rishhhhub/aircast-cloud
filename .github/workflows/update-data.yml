@@ -38,14 +38,17 @@ jobs:
         env:
           PYTHONPATH: src
 
-      - name: Commit the new data (replaces the previous data commit so the history stays small)
+      - name: Commit the new data (one commit per day; later runs of the same day replace it)
         run: |
-          git config user.name "AirCast Team"
-          git config user.email "aircast-team@users.noreply.github.com"
+          git config user.name "Rishhhhub"
+          git config user.email "81343897+Rishhhhub@users.noreply.github.com"
           git add data/processed/live_forecast.parquet data/processed/recent_station_day.parquet data/processed/weather_live.parquet data/external/live_stations.csv reports/live_check.csv
           if git diff --cached --quiet; then echo "no new data"; exit 0; fi
-          if [ "$(git log -1 --format=%s)" = "Update live data" ]; then
-            git commit --amend -q -m "Update live data"
+          last_msg="$(git log -1 --format=%s)"
+          last_day="$(git log -1 --format=%cd --date=format:%Y-%m-%d)"
+          today="$(date -u +%Y-%m-%d)"
+          if [ "$last_msg" = "Update live data" ] && [ "$last_day" = "$today" ]; then
+            git commit --amend --reset-author -q -m "Update live data"
             git push --force-with-lease
           else
             git commit -q -m "Update live data"
