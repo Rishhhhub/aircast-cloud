@@ -1,0 +1,53 @@
+name: Update live data
+
+on:
+  schedule:
+    - cron: '0 2,14 * * *'      # 02:00 and 14:00 UTC = 07:30 and 19:30 IST
+  workflow_dispatch:             # also lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+
+      - name: Install packages
+        run: pip install -r requirements.txt holidays==0.106
+
+      - name: Download the latest station data
+        run: python src/15_fetch_recent.py
+        env:
+          PYTHONPATH: src
+
+      - name: Download the weather forecast and run the models
+        run: python src/16_live_pipeline.py
+        env:
+          PYTHONPATH: src
+
+      - name: Commit the new data (replaces the previous data commit so the history stays small)
+        run: |
+          git config user.name "AirCast Team"
+          git config user.email "aircast-team@users.noreply.github.com"
+          git add data/processed/live_forecast.parquet data/processed/recent_station_day.parquet data/processed/weather_live.parquet data/external/live_stations.csv reports/live_check.csv
+          if git diff --cached --quiet; then echo "no new data"; exit 0; fi
+          if [ "$(git log -1 --format=%s)" = "Update live data" ]; then
+            git commit --amend -q -m "Update live data"
+            git push --force-with-lease
+          else
+            git commit -q -m "Update live data"
+            git push
+          fi
