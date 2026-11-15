@@ -151,21 +151,12 @@ tab0, tabB, tab1, tab2 = st.tabs(['Live forecast', 'Between stations', 'Forecast
 
 # ------------------------------------------------------------------ live tab
 with tab0:
-    import subprocess, sys
     LF = load_live()
     top = st.columns([3, 1])
     with top[1]:
-        if st.button('Refresh live data (about 3 min)'):
-            with st.spinner('Downloading the latest station data and weather forecast, then re-running the models...'):
-                logs = []
-                for script in ('src/15_fetch_recent.py', 'src/16_live_pipeline.py'):
-                    r = subprocess.run([sys.executable, os.path.join(ROOT, script)], cwd=ROOT, capture_output=True, text=True)
-                    logs.append(r.stdout[-400:] + r.stderr[-300:])
-                    if r.returncode != 0:
-                        st.error(f'{script} failed:\n' + logs[-1]); break
-            st.cache_data.clear(); st.rerun()
+        st.caption('The data updates automatically twice a day (07:30 and 19:30 IST) by a scheduled job.')
     if LF is None:
-        st.info('No live forecast yet. Click "Refresh live data", or run src/15_fetch_recent.py and src/16_live_pipeline.py.')
+        st.info('No live forecast yet. The scheduled job fills it in twice a day.')
     else:
         obs = LF.obs_date.max()
         # Model switch. "Course model" = the XGBoost regressor of the notebook (same 64 features, trained on 2017-2022). "Extended" = the v4 ensemble (season physics + CAMS correction).
