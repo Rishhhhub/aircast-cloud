@@ -2,6 +2,7 @@ station_id,station_name,city,state,lon,lat,is_live
 site_5587,"Bardowali, Agartala - Tripura SPCB",Agartala,Tripura,91.2726974,23.8175497,True
 site_5464,"Manoharpur, Agra - UPPCB",Agra,Uttar Pradesh,78.01936,27.23711,True
 site_5482,"Rohta, Agra - UPPCB",Agra,Uttar Pradesh,78.000111,27.106972,True
+site_307,"Sanjay Palace, Agra - UPPCB",Agra,Uttar Pradesh,78.00598056,27.19865833,True
 site_5465,"Sector-3B Avas Vikas Colony, Agra - UPPCB",Agra,Uttar Pradesh,77.96237,27.19412,True
 site_5501,"Shahjahan Garden, Agra - UPPCB",Agra,Uttar Pradesh,78.03582,27.169338,True
 site_5463,"Shastripuram, Agra - UPPCB",Agra,Uttar Pradesh,77.92066,27.19862,True
@@ -58,13 +59,14 @@ site_1549,"Hardev Nagar, Bathinda - PPCB",Bathinda,Punjab,74.907758,30.233011,Tr
 site_6071,"Bir, Beed - MPCB",Beed,Maharashtra,75.753873,18.988474,True
 site_5540,"Lohiyanagar, Begusarai - BSPCB",Begusarai,Bihar,86.13886079,25.42742023,True
 site_5804,"CBD Belapur, Belapur - MPCB",Belapur,Maharashtra,73.0406721,19.0243902,True
-site_5432,"Ramteerth Nagar, Belgaum - KSPCB",Belgaum,Karnataka,74.541751,15.888653,True
 site_162,"BTM Layout, Bengaluru - CPCB",Bengaluru,Karnataka,77.5950804,12.9135218,True
 site_1553,"Bapuji Nagar, Bengaluru - KSPCB",Bengaluru,Karnataka,77.539784,12.951913,True
+site_165,"City Railway Station, Bengaluru - KSPCB",Bengaluru,Karnataka,77.5660749,12.9756843,True
 site_1554,"Hebbal, Bengaluru - KSPCB",Bengaluru,Karnataka,77.585901,13.029152,True
 site_1555,"Hombegowda Nagar, Bengaluru - KSPCB",Bengaluru,Karnataka,77.5901,12.938539,True
 site_1556,"Jayanagar 5th Block, Bengaluru - KSPCB",Bengaluru,Karnataka,77.584908,12.920984,True
 site_5729,"Jigani, Bengaluru - KSPCB",Bengaluru,Karnataka,77.6299145,12.7816279,True
+site_5681,"Kasturi Nagar, Bengaluru - KSPCB",Bengaluru,Karnataka,77.664217,13.003872,True
 site_163,"Peenya, Bengaluru - CPCB",Bengaluru,Karnataka,77.494094,13.0270199,True
 site_5678,"RVCE-Mailasandra, Bengaluru - KSPCB",Bengaluru,Karnataka,77.502466,12.921418,True
 site_166,"Sanegurava Halli, Bengaluru - KSPCB",Bengaluru,Karnataka,77.5431385,12.990328,True
@@ -120,12 +122,12 @@ site_5265,"Kalyana Nagara, Chikkamagaluru - KSPCB",Chikkamagaluru,Karnataka,75.7
 site_5665,"Gangineni Cheruvu, Chittoor - APPCB",Chittoor,Andhra Pradesh,79.097889,13.20488,True
 site_5712,"Shastri Nagar, Chittorgarh - RSPCB",Chittorgarh,Rajasthan,74.623527,24.892047,True
 site_5699,"Subash Chowk, Churu - RSPCB",Churu,Rajasthan,74.961696,28.296139,True
-site_5094,"SIDCO Kurichi, Coimbatore - TNPCB",Coimbatore,Tamil Nadu,76.978996,10.942451,True
 site_5611,"Semmandalam, Cuddalore - TNPCB",Cuddalore,Tamil Nadu,79.7499835,11.7637683,True
 site_5941,"CDA Area, Cuttack - OSPCB",Cuttack,Odisha,85.84768,20.48891,True
 site_5040,"Shrivastav Colony, Damoh - MPPCB",Damoh,Madhya Pradesh,79.446246,23.81748678,True
 site_5477,"Town Hall - Lal Bagh, Darbhanga - BSPCB",Darbhanga,Bihar,85.902825,26.112777,True
 site_5713,"Khatikan Mohalla, Dausa - RSPCB",Dausa,Rajasthan,76.334753,26.895552,True
+site_5422,"Devaraj Urs Badavane, Davanagere - KSPCB",Davanagere,Karnataka,75.9052,14.4758,True
 site_100435,"Shyopura, Deeg-RSPCB",Deeg,Rajasthan,77.30081,27.46701,True
 site_5594,"Doon University, Dehradun - UKPCB",Dehradun,Uttarakhand,78.044167,30.269444,True
 site_5024,"Alipur, Delhi - DPCC",Delhi,Delhi,77.15301,28.815329,True
@@ -183,7 +185,6 @@ site_1432,"Sonia Vihar, Delhi - DPCC",Delhi,Delhi,77.249485,28.710508,True
 site_1562,"Sri Aurobindo Marg, Delhi - DPCC",Delhi,Delhi,77.190156,28.531346,True
 site_6081,"Talkatora Garden, Delhi - DPCC",Delhi,Delhi,77.1944633,28.62181,True
 site_100417,"Tikri Kalan, Delhi-DPCC",Delhi,Delhi,76.980506,28.67518,True
-site_100416,"Uttam Nagar, Delhi-DPCC",Delhi,Delhi,77.0571176,28.6375265,True
 site_100411,"Vasundhara Enclave, Delhi - DPCC",Delhi,Delhi,77.321644,28.603699,True
 site_1435,"Vivek Vihar, Delhi - DPCC",Delhi,Delhi,77.31526,28.672342,True
 site_1434,"Wazirpur, Delhi - DPCC",Delhi,Delhi,77.165453,28.699793,True
@@ -248,7 +249,6 @@ site_5337,"Industrial Area, Hajipur - BSPCB",Hajipur,Bihar,85.2459,25.697189,Tru
 site_300,"Priyambada Housing Estate, Haldia - WBPCB",Haldia,West Bengal,88.109737,22.06047,True
 site_5715,"Housing Board, Hanumangarh - RSPCB",Hanumangarh,Rajasthan,74.283608,29.61075,True
 site_5023,"Anand Vihar, Hapur - UPPCB",Hapur,Uttar Pradesh,77.749675,28.725645,True
-site_5420,"Ashwini Nagar, Haveri - KSPCB",Haveri,Karnataka,75.3896,14.7918,True
 site_6072,"Ashta Vinayak Nagar, Hingoli - MPCB",Hingoli,Maharashtra,77.151824,19.710842,True
 site_5057,"Urban Estate-II, Hisar - HSPCB",Hisar,Haryana,75.744941,29.14056,True
 site_5101,"Belur Math, Howrah - WBPCB",Howrah,West Bengal,88.352017,22.629801,True
@@ -263,7 +263,6 @@ site_5596,"ECIL Kapra, Hyderabad - TSPCB",Hyderabad,Telangana,78.566959,17.47043
 site_251,"ICRISAT Patancheru, Hyderabad - TSPCB",Hyderabad,Telangana,78.278777,17.5184,True
 site_275,"IDA Pashamylaram, Hyderabad - TSPCB",Hyderabad,Telangana,78.218939,17.5316895,True
 site_5597,"IITH Kandi, Hyderabad - TSPCB",Hyderabad,Telangana,78.126199,17.585705,True
-site_5604,"Kokapet, Hyderabad - TSPCB",Hyderabad,Telangana,78.339194,17.393559,True
 site_5599,"Kompally Municipal Office, Hyderabad - TSPCB",Hyderabad,Telangana,78.486949,17.544899,True
 site_5600,"Nacharam_TSIIC IALA, Hyderabad - TSPCB",Hyderabad,Telangana,78.569354,17.429398,True
 site_5595,"New Malakpet, Hyderabad - TSPCB",Hyderabad,Telangana,78.50864,17.37206,True
@@ -305,7 +304,6 @@ site_254,"Tata Stadium, Jorapokhar - JSPCB",Jorapokhar,Jharkhand,86.41467,23.707
 site_5693,"Yerramukkapalli, Kadapa - APPCB",Kadapa,Andhra Pradesh,78.824187,14.465052,True
 site_5072,"Rishi Nagar, Kaithal - HSPCB",Kaithal,Haryana,76.4155,29.8006,True
 site_100399,"Rama Rao Peta, Kakinada - APPCB",Kakinada,Andhra Pradesh,82.229513,16.962488,True
-site_1565,"Lal Bahadur Shastri Nagar, Kalaburagi - KSPCB",Kalaburagi,Karnataka,76.822628,17.321993,True
 site_5679,"Mahatma Basaveswar Colony, Kalaburgi - KSPCB",Kalaburagi,Karnataka,76.847397,17.336318,True
 site_5118,"Khadakpada, Kalyan - MPCB",Kalyan,Maharashtra,73.142019,19.25292,True
 site_305,"Pimpleshwar Mandir, Kalyan - MPCB",Kalyan,Maharashtra,72.9585188,19.192056,True
@@ -317,7 +315,6 @@ site_276,"Nehru Nagar, Kanpur - UPPCB",Kanpur,Uttar Pradesh,80.3229863,26.470313
 site_5723,"Satyawati Vihar, Karauli - RSPCB",Karauli,Rajasthan,77.025989,26.506177,True
 site_5049,"Sector-12, Karnal - HSPCB",Karnal,Haryana,77.0027,29.6953,True
 site_5853,"KHB Colony, Karwar - KSPCB",Karwar,Karnataka,74.141003,14.816666,True
-site_5704,"Govt. Girls Inter College, Kashipur - UKPCB",Kashipur,Uttarakhand,78.9611753,29.2124114,True
 site_5546,"Mirchaibari, Katihar - BSPCB",Katihar,Bihar,87.553265,25.560083,True
 site_5250,"Gole Bazar, Katni - MPPCB",Katni,Madhya Pradesh,80.23284,23.50016,True
 site_5671,"Jagamohanpur, Keonjhar - OSPCB",Keonjhar,Odisha,85.599355,21.6439,True
@@ -346,6 +343,7 @@ site_5701,"Nayapura, Kota - RSPCB",Kota,Rajasthan,75.855668,25.196024,True
 site_1394,"Shrinath Puram, Kota - RSPCB",Kota,Rajasthan,75.821256,25.14389,True
 site_100430,"Govt ITI, Kotputli-RSPCB",Kotputli,Rajasthan,76.20681,27.701529,True
 site_5690,"OP Jindal School, Kunjemura - CECB",Kunjemura,Chhattisgarh,83.483212,22.12665,True
+site_100387,"Sita Rama Nagar, Kurnool - APPCB",Kurnool,Andhra Pradesh,78.028546,15.83411,True
 site_5043,"Sector-7, Kurukshetra - HSPCB",Kurukshetra,Haryana,76.875879,29.966942,True
 site_5780,"Sawe Wadi, Latur - MPCB",Latur,Maharashtra,76.57452,18.39963,True
 site_100397,"Skara Yokma, Leh - LPCC",Leh,Ladakh,77.55709,34.147096,True
@@ -365,6 +363,7 @@ site_5802,"Mahesh Nagar, Malegaon - MPCB",Malegaon,Maharashtra,74.529236,20.5557
 site_255,"RIMT University, Mandi Gobindgarh - PPCB",Mandi Gobindgarh,Punjab,76.331442,30.649961,True
 site_1403,"Sector-D Industrial Area, Mandideep - MPPCB",Mandideep,Madhya Pradesh,77.511428,23.10844,True
 site_5055,"General Hospital, Mandikhera(Nuh) - HSPCB",Mandikhera,Haryana,76.9938,27.9002,True
+site_5039,"Sector-2 IMT, Manesar - HSPCB",Manesar,Haryana,76.93609,28.360699,True
 site_5421,"Kadri, Mangalore - KSPCB",Mangalore,Karnataka,74.853,12.88925,True
 site_5550,"Forest Rest House, Manguraha - BSPCB",Manguraha,Bihar,84.531742,27.308328,True
 site_6094,"Pali Dungra, Mathura - UPPCB",Mathura,Uttar Pradesh,77.550619,27.410954,True
@@ -381,7 +380,6 @@ site_5554,"Buddhi Vihar, Moradabad - UPPCB",Moradabad,Uttar Pradesh,78.7446,28.8
 site_5556,"Eco Herbal Park, Moradabad - UPPCB",Moradabad,Uttar Pradesh,78.697531,28.840739,True
 site_5537,"Employment Office, Moradabad - UPPCB",Moradabad,Uttar Pradesh,78.7388,28.88528,True
 site_5555,"Jigar Colony, Moradabad - UPPCB",Moradabad,Uttar Pradesh,78.772638,28.856664,True
-site_5620,"Kashiram Nagar, Moradabad - UPPCB",Moradabad,Uttar Pradesh,78.742362,28.849399,True
 site_5613,"Transport Nagar, Moradabad - UPPCB",Moradabad,Uttar Pradesh,78.753728,28.802625,True
 site_5478,"Gandak Colony, Motihari - BSPCB",Motihari,Bihar,84.90051,26.63086,True
 site_5392,"Bandra Kurla Complex, Mumbai - IITM",Mumbai,Maharashtra,72.84643,19.053536,True
@@ -422,9 +420,9 @@ site_5792,"Ambazari, Nagpur - MPCB",Nagpur,Maharashtra,79.04952,21.121801,True
 site_5796,"Mahal, Nagpur - MPCB",Nagpur,Maharashtra,79.107595,21.14472,True
 site_303,"Opp GPO Civil Lines, Nagpur - MPCB",Nagpur,Maharashtra,79.0517531,21.152875,True
 site_5793,"Ram Nagar, Nagpur - MPCB",Nagpur,Maharashtra,79.048912,21.143383,True
-site_5446,"Naharlagun, Naharlagun - APSPCB",Naharlagun,Arunachal Pradesh,93.679645,27.103358,True
 site_5668,"Bata Chowk, Nalbari - PCBA",Nalbari,Assam,91.439057,26.446912,True
 site_5795,"Sneh Nagar, Nanded - MPCB",Nanded,Maharashtra,77.296291,19.173852,True
+site_5274,"GIDC, Nandesari - Nandesari Ind. Association",Nandesari,Gujarat,73.097923,22.410802,True
 site_5053,"Shastri Nagar, Narnaul - HSPCB",Narnaul,Haryana,76.113115,28.060249,True
 site_304,"Gangapur Road, Nashik - MPCB",Nashik,Maharashtra,73.7762427,20.0073285,True
 site_5782,"Hirawadi, Nashik - MPCB",Nashik,Maharashtra,73.813844,20.021503,True
@@ -491,10 +489,10 @@ site_5654,"Krishak Nagar, Raipur - CECB",Raipur,Chhattisgarh,81.705301,21.237755
 site_5653,"Siltara Phase-II, Raipur - CECB",Raipur,Chhattisgarh,81.664929,21.371751,True
 site_5672,"Divisional Forest Office, Rairangpur - OSPCB",Rairangpur,Odisha,86.174829,22.265816,True
 site_1399,"Anand Kala Kshetram, Rajamahendravaram - APPCB",Rajamahendravaram,Andhra Pradesh,81.7363176,16.9872867,True
+site_5489,"Dangi Tola, Rajgir - BSPCB",Rajgir,Bihar,85.41948,25.0328,True
 site_6068,"Mavdi, Rajkot - Nexteng Enviro ",Rajkot,Gujarat,70.776774,22.248853,True
 site_5718,"Dhoinda, Rajsamand - RSPCB",Rajsamand,Rajasthan,73.883502,25.03636,True
 site_5255,"Vijay Nagar, Ramanagara - KSPCB",Ramanagara,Karnataka,77.298051,12.733409,True
-site_5625,"Chalai Bazaar, Ramanathapuram - TNPCB",Ramanathapuram,Tamil Nadu,78.831977,9.36399,True
 site_100444,"Jandaha Magrahi, Ramgarh-BSPCB",Ramgarh,Bihar,83.6062017,25.3279034,True
 site_5042,"Shasthri Nagar, Ratlam - IPCA Lab",Ratlam,Madhya Pradesh,75.045981,23.331731,True
 site_5703,"Shivaji Nagar, Rishikesh - UKPCB",Rishikesh,Uttarakhand,78.2859547,30.075911,True
@@ -505,7 +503,6 @@ site_5688,"Sector-2, Rourkela - OSPCB",Rourkela,Odisha,84.88111111,22.245,True
 site_1538,"Ratanpura, Rupnagar - Ambuja Cements",Rupnagar,Punjab,76.5623046,31.0325454,True
 site_5662,"Civil Lines, Sagar - MPPCB",Sagar,Madhya Pradesh,78.759431,23.838586,True
 site_5269,"Deen Dayal Nagar, Sagar - MPPCB",Sagar,Madhya Pradesh,78.80289321,23.8640158,True
-site_5551,"Police Line, Saharsa - BSPCB",Saharsa,Bihar,86.590325,25.892357,True
 site_5552,"DM Office_Kasipur, Samastipur - BSPCB",Samastipur,Bihar,85.77944,25.859655,True
 site_5774,"Vijay Nagar, Sangli - MPCB",Sangli,Maharashtra,74.3623,16.5038,True
 site_5485,"Dada Peer, Sasaram - BSPCB",Sasaram,Bihar,84.002396,24.952822,True
@@ -546,7 +543,6 @@ site_5390,"Corporation Ground, Thrissur - Kerala PCB",Thrissur,Kerala,76.2159,10
 site_258,"Toll Gate, Tirumala - APPCB",Tirumala,Andhra Pradesh,79.35,13.67,True
 site_5666,"Vaikuntapuram, Tirupati - APPCB",Tirupati,Andhra Pradesh,79.40923,13.615387,True
 site_5702,"Shastri Nagar, Tonk - RSPCB",Tonk,Rajasthan,75.780517,26.159933,True
-site_5682,"Thimmalapura, Tumakuru - KSPCB",Tumakuru,Karnataka,77.099072,13.377516,True
 site_5692,"OP Jindal Industrial Park, Tumidih - CECB",Tumidih,Chhattisgarh,83.33820077,22.06631475,True
 site_1397,"Ashok Nagar, Udaipur - RSPCB",Udaipur,Rajasthan,73.6321397,24.5886166,True
 site_5433,"Brahmagiri, Udupi - KSPCB",Udupi,Karnataka,74.74694444,13.34194444,True
@@ -554,6 +550,7 @@ site_6063,"Mahashweta Nagar, Ujjain - MPPCB",Ujjain,Madhya Pradesh,75.800225,23.
 site_5812,"Sidhi Vinayak Nagar, Ulhasnagar - MPCB",Ulhasnagar,Maharashtra,73.159121,19.235581,True
 site_6083,"Vithalwadi, Ulhasnagar - MPCB",Ulhasnagar,Maharashtra,73.155192,19.2307571,True
 site_6065,"Bapunagar, Vadodara - Nexteng Enviro",Vadodara,Gujarat,73.216285,22.320153,True
+site_5071,"Phase-1 GIDC, Vapi - GPCB",Vapi,Gujarat,72.918013,20.362421,True
 site_273,"Ardhali Bazar, Varanasi - UPPCB",Varanasi,Uttar Pradesh,82.9083074,25.3505986,True
 site_5469,"Bhelupur, Varanasi - UPPCB",Varanasi,Uttar Pradesh,82.996789,25.301778,True
 site_5468,"IESD Banaras Hindu University, Varanasi - UPPCB",Varanasi,Uttar Pradesh,82.995408,25.262326,True
@@ -568,6 +565,7 @@ site_5808,"Bolinj, Virar - MPCB",Virar,Maharashtra,72.7988231,19.445821,True
 site_260,"GVM Corporation, Visakhapatnam - APPCB",Visakhapatnam,Andhra Pradesh,83.3,17.72,True
 site_100441,"Kailasapuram, Visakhapatnam-Port Authority",Visakhapatnam,Andhra Pradesh,83.300458,17.744546,True
 site_100443,"Pandurangapuram, Visakhapatnam-APPCB",Visakhapatnam,Andhra Pradesh,83.317924,17.717901,True
+site_100405," Chhatikara, Vrindavan - UPPCB",Vrindavan,Uttar Pradesh,77.62346,27.57194,True
 site_5483,"Omex Eternity, Vrindavan - UPPCB",Vrindavan,Uttar Pradesh,77.655757,27.571409,True
 site_5254,"Collector Office, Yadgir - KSPCB",Yadgir,Karnataka,77.1428,16.7602,True
 site_5046,"Gobind Pura, Yamuna Nagar - HSPCB",Yamuna Nagar,Haryana,77.2893471,30.1480566,True
